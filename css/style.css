@@ -1,5 +1,116 @@
+/* Google fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+/* *************** */
+/* GENERAL STYLES */
+/* ************* */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.link:link,
+.link:visited {
+  background-color: #e02c6d;
+  color: #fff;
+  font-size: ;
+  padding: 10px 24px;
+  border-radius: 41px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/*                 */
+/* HEADER SECTION */
+/*               */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12rem;
+  height: 9.6rem;
+}
+
+.brand-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/*             */
+/* NAVIGATION */
+/*           */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3.4rem;
+}
+
+.nav-icon {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+/* HERO SECTION */
+
+.section-hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 7rem 12rem 10rem;
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  /* flex-basis: 60%;
+  flex-grow: 1;
+  flex-shrink: 0; */
+  flex: 1 0 60%;
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 5.2rem;
+  letter-spacing: -1.3px;
+  line-height: 1.1;
+}
+
+.hero-img-box {
+  /* flex-basis: 40%;
+  flex-grow: 1;
+  flex-shrink: 0; */
+  flex: 1 0 40%;
+}
+
+.hero-img-box img {
+  width: 100%;
 }
