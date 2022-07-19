@@ -34,13 +34,18 @@ a:active {
 .link:visited {
   background-color: #e02c6d;
   color: #fff;
-  font-size: ;
   padding: 10px 24px;
   border-radius: 41px;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*                 */
@@ -52,7 +57,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding: 0 12rem;
-  height: 9.6rem;
+  height: 9.8rem;
 }
 
 .brand-logo {
@@ -79,9 +84,10 @@ a:active {
 
 .section-hero {
   max-width: 130rem;
-  margin: 0 auto;
   padding: 7rem 12rem 10rem;
-  display: flex;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
   align-items: center;
   gap: 13rem;
 }
@@ -91,10 +97,6 @@ a:active {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.6rem;
-  /* flex-basis: 60%;
-  flex-grow: 1;
-  flex-shrink: 0; */
-  flex: 1 0 60%;
 }
 
 .heading-primary {
@@ -103,14 +105,25 @@ a:active {
   letter-spacing: -1.3px;
   line-height: 1.1;
 }
-
+/* 
 .hero-img-box {
-  /* flex-basis: 40%;
-  flex-grow: 1;
-  flex-shrink: 0; */
-  flex: 1 0 40%;
-}
+} */
 
 .hero-img-box img {
   width: 100%;
+}
+
+/*                      */
+/* FEATURED IN SECTION */
+/*                    */
+
+.section-featured-in {
+  width: 100rem;
+  margin-bottom: 10rem;
+  padding: 3.6rem 6.2rem;
+  display: grid;
+  border-top: 1px solid #c0ccda;
+  border-bottom: 1px solid #c0ccda;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
 }
