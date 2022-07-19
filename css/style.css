@@ -108,6 +108,7 @@ main {
 
 .hero-img-box {
   background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
@@ -131,15 +132,27 @@ main {
   justify-content: center;
 }
 
+/*                             */
+/* Product collection section */
+/*                           */
+
 .section-collection {
   width: 120rem;
   padding: 3.6rem 6.2rem;
+  margin-bottom: 10rem;
+}
+
+.colloction-section-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 .product-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .product-card {
@@ -155,4 +168,57 @@ main {
 .product-name {
   font-weight: 500;
   font-size: 28px;
+  color: #18191f;
+  margin-bottom: 0.6rem;
+}
+
+.product-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 1.4rem;
+}
+
+.product-ratting {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.product-ratting .fa-solid {
+  font-size: 1.1rem;
+  color: #fb8200;
+}
+
+.product-ratting p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.shipping-info {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.link--see-more-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link--see-more:link,
+.link--see-more:visited,
+.link--see-more:hover,
+.link--see-more:active {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  color: #e02c6d;
+  font-weight: 700;
+  font-size: 16px;
 }
