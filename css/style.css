@@ -124,14 +124,18 @@ main {
 /*                    */
 
 .section-featured-in {
-  width: 100rem;
+  max-width: 100rem;
   margin-bottom: 10rem;
   padding: 3.6rem 6.2rem;
   display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6rem;
   border-top: 1px solid #c0ccda;
   border-bottom: 1px solid #c0ccda;
-  grid-template-columns: repeat(7, 1fr);
-  justify-content: center;
+}
+
+.section-featured-in img {
+  width: 100%;
 }
 
 /*                             */
@@ -139,7 +143,7 @@ main {
 /*                           */
 
 .section-collection {
-  width: 120rem;
+  max-width: 120rem;
   padding: 3.6rem 6.2rem;
   margin-bottom: 10rem;
 }
@@ -300,5 +304,21 @@ main {
 @media (max-width: 77em) {
   html {
     font-size: 56.25%;
+  }
+
+  body {
+    font-weight: 500;
+  }
+
+  .section-hero {
+    gap: 9.8rem;
+  }
+
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+
+  .featured-product-title {
+    font-size: 3.2rem;
   }
 }
