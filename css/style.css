@@ -31,7 +31,9 @@ a:active {
 }
 
 .link:link,
-.link:visited {
+.link:visited,
+.link:hover,
+.link:active {
   background-color: #e02c6d;
   color: #fff;
   padding: 10px 24px;
@@ -221,4 +223,71 @@ main {
   color: #e02c6d;
   font-weight: 700;
   font-size: 16px;
+}
+
+/* Featured product section */
+
+.featured-product {
+  width: 120rem;
+  padding: 3.6rem 2.4rem;
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  align-items: center;
+  gap: 9.6rem;
+  margin-bottom: 10rem;
+}
+
+.featured-product-img-box img {
+  width: 100%;
+}
+
+.featured-product-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.featured-product-title {
+  font-weight: 700;
+  font-size: 38px;
+  color: #0a0826;
+}
+
+.featured-product-text {
+  font-weight: 700;
+  color: #6c6c6c;
+}
+
+.link--more:link,
+.link--more:visited,
+.link--:hover,
+.link--more:active {
+  border-radius: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #0a0826;
+  color: #fff;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.copyright-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 14px;
 }
